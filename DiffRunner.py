@@ -49,8 +49,8 @@ def ArgumentValidator(NFvalue,OFvalue):
 
 #Code Snippet to Extract the directory contents into temporary location
 def ContentExtractor(UnZipNFvalue,UnZipOFvalue):
-    UnZipNFTempvalue=tempfile.mkdtemp(suffix='jfp01', prefix='tmp', dir=None)
-    UnZipOFTempvalue=tempfile.mkdtemp(suffix='jfp02', prefix='tmp', dir=None)
+    UnZipNFTempvalue=tempfile.mkdtemp(suffix='01', prefix='tmp', dir=None)
+    UnZipOFTempvalue=tempfile.mkdtemp(suffix='02', prefix='tmp', dir=None)
 
     zip = zipfile.ZipFile(UnZipNFvalue)
     zip.extractall(path=UnZipNFTempvalue)
