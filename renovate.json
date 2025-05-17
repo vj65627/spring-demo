@@ -1,8 +1,8 @@
 {
   "packageRules": [
     {
-      "matchDepTypes": ["dependencies"],
-      "groupName": "all-dependencies"
+      "matchPackageNames": ["commons-io"],
+      "groupName": "commons-io"
     }
   ]
 }
